@@ -121,9 +121,11 @@ navLink.forEach((element) => {
 // Nest two similar events somewhere in the site and prevent the event propogation properly
 destination.addEventListener('mousedown', () => {
     console.log("Destination");
+    destination.style.backgroundColor = "red"
 });
 
 destinationBtn.addEventListener('mousedown', (e) => {
     e.stopPropagation();
     console.log("Button");
+    destinationBtn.style.backgroundColor = "green"
 });
